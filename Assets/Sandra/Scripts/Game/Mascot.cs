@@ -17,8 +17,11 @@ public class Mascot : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            anim.SetTrigger("onhit");
+            anim.SetBool("onhit", true); // headbutt when space key pressed
+
             Debug.Log("space key was pressed");
         }
+
+        // anim.SetBool("onhit", false);
     }
 }
