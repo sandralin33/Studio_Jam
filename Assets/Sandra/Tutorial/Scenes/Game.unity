@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBePressed: 0
-  keyToPress: 0
+  keyToPress: 32
 --- !u!114 &137593229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatTempo: 146
-  hasStarted: 1
+  start: 0
 --- !u!1 &139733955
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +601,7 @@ AudioSource:
   m_GameObject: {fileID: 515992356}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: b706b9fe1dda2c5468258ccb2f6e79fd, type: 2}
   m_audioClip: {fileID: 8300000, guid: ce6ee462db75b334cbcfcd9c34a99eb4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1617,8 +1617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e13d2214b6d8a34c85f0a546a66ec78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
-  startMusic: 1
+  music: {fileID: 515992357}
+  startMusic: 0
 --- !u!4 &1324389916
 Transform:
   m_ObjectHideFlags: 0
@@ -2279,7 +2279,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1858258614}
   - component: {fileID: 1858258613}
-  - component: {fileID: 1858258615}
   - component: {fileID: 1858258616}
   m_Layer: 0
   m_Name: blue axol
@@ -2355,20 +2354,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 137593227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1858258615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858258612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a42de64296fe774ab76ad3e874fe37b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canBePressed: 0
-  keyToPress: 32
 --- !u!61 &1858258616
 BoxCollider2D:
   m_ObjectHideFlags: 0
