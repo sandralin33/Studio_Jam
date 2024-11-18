@@ -1,27 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// using UnityEngine.Events;
 
 public class Mascot : MonoBehaviour
 {
-    Animator anim;
+    public Animator anim;
+    // public UnityEvent hit;
+    public static Mascot axo;
 
     // Start is called before the first frame update
     void Start()
     {
+        axo = this;
         anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            anim.SetBool("onhit", true); // headbutt when space key pressed
-
-            Debug.Log("space key was pressed");
+            anim.SetTrigger("onhit");
+            Debug.Log("up key was pressed");
         }
 
-        // anim.SetBool("onhit", false);
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            anim.SetTrigger("onhit");
+            Debug.Log("left key was pressed");
+        }
+
+        // StopHead();
+    }
+
+    public void StopHead()
+    {
+        anim.SetBool("onhit", false);
     }
 }

@@ -7,6 +7,8 @@ public class NoteObject : MonoBehaviour
     public bool canBePressed; 
     [SerializeField] KeyCode keyToPress; // find what key to press
 
+    public GameObject hitEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class NoteObject : MonoBehaviour
                 gameObject.SetActive(false);
 
                 GameManager.instance.NoteHit();
+                Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
             }
         }
     }

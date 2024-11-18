@@ -884,6 +884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  hitEffect: {fileID: 7801040924244030172, guid: e77534f5427d9334cbe027696c990034, type: 3}
 --- !u!61 &624578549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -916,7 +917,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.061546326, y: 0.0021736026}
+  m_Offset: {x: 2.680464, y: 0.0021736622}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -927,7 +928,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.547392, y: 3.9886174}
+  m_Size: {x: 4.063371, y: 3.9886174}
   m_EdgeRadius: 0
 --- !u!212 &624578550
 SpriteRenderer:
@@ -997,7 +998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &708502587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,6 +1253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 273
+  hitEffect: {fileID: 7801040924244030172, guid: e77534f5427d9334cbe027696c990034, type: 3}
 --- !u!61 &746040908
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1284,7 +1286,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -3.2655683}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1295,7 +1297,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.05, y: 16.09}
+  m_Size: {x: 20.05, y: 4.6088715}
   m_EdgeRadius: 0
 --- !u!212 &746040909
 SpriteRenderer:
@@ -1803,6 +1805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  hitEffect: {fileID: 7801040924244030172, guid: e77534f5427d9334cbe027696c990034, type: 3}
 --- !u!61 &1314630831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1835,7 +1838,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.064356565}
+  m_Offset: {x: 6.6942806, y: 0.064356804}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1846,7 +1849,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.05, y: 8.494865}
+  m_Size: {x: 6.6614385, y: 8.494865}
   m_EdgeRadius: 0
 --- !u!212 &1314630832
 SpriteRenderer:
@@ -1930,9 +1933,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 515992357}
-  startMusic: 0
   beat: {fileID: 137593228}
   beatDown: {fileID: 708502587}
+  currentScore: 0
+  scorePerNote: 1
+  scoreText: {fileID: 1791990394}
 --- !u!4 &1324389916
 Transform:
   m_ObjectHideFlags: 0
@@ -2075,6 +2080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  hitEffect: {fileID: 7801040924244030172, guid: e77534f5427d9334cbe027696c990034, type: 3}
 --- !u!61 &1411084549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2107,7 +2113,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 7.2503996, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2118,7 +2124,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.05, y: 16.09}
+  m_Size: {x: 5.5491996, y: 16.09}
   m_EdgeRadius: 0
 --- !u!212 &1411084550
 SpriteRenderer:
@@ -2272,6 +2278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8adfced543c604540bed0c9242cb5df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1483657437}
 --- !u!61 &1483657435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2304,7 +2311,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.4937372, y: 2.1604009}
+  m_Offset: {x: -2.4937372, y: 1.0249156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2315,7 +2322,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.183877, y: 7.33414}
+  m_Size: {x: 8.183877, y: 5.0631685}
   m_EdgeRadius: 0
 --- !u!50 &1483657436
 Rigidbody2D:
@@ -2354,7 +2361,7 @@ Animator:
   m_GameObject: {fileID: 1483657431}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a3a3b9c7efdd6024188e58762dec74c1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8f3ff1b0d2fba0a4990710a1f7a8b543, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2413,6 +2420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 273
+  hitEffect: {fileID: 7801040924244030172, guid: e77534f5427d9334cbe027696c990034, type: 3}
 --- !u!61 &1544313599
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2445,7 +2453,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0000019073486, y: -0.0000017881393}
+  m_Offset: {x: 0.0000019073486, y: -2.0313022}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2456,7 +2464,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.495045, y: 7.1882277}
+  m_Size: {x: 9.495045, y: 3.125627}
   m_EdgeRadius: 0
 --- !u!212 &1544313600
 SpriteRenderer:
@@ -2602,12 +2610,12 @@ GameObject:
   - component: {fileID: 1605572180}
   - component: {fileID: 1605572179}
   m_Layer: 5
-  m_Name: GameOver
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1605572179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2811,7 +2819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1791990393
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2828,7 +2836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -645, y: -376}
+  m_AnchoredPosition: {x: -618, y: -411.6}
   m_SizeDelta: {x: 560.4, y: 164.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1791990394
@@ -2844,7 +2852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2853,10 +2861,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 41
-    m_FontStyle: 0
+    m_FontSize: 60
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 76
     m_Alignment: 6
     m_AlignByGeometry: 0
@@ -2864,7 +2872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score: 100'
+  m_Text: 'Enemies Beaten: 0'
 --- !u!222 &1791990395
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2943,7 +2951,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TOO MANY NOTES MISSED!
+  m_Text: YOU DIED
 --- !u!222 &1894841111
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3448,7 +3456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2046179000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3521,6 +3529,6 @@ SceneRoots:
   - {fileID: 708502588}
   - {fileID: 137593227}
   - {fileID: 1605572182}
-  - {fileID: 574676887}
   - {fileID: 1324389916}
+  - {fileID: 574676887}
   - {fileID: 1665987928}
