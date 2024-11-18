@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Mascot : MonoBehaviour
 {
+    
+    public Animator animator;
+
     // private bool Headbutt = false;
 
     // Start is called before the first frame update
