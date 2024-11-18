@@ -18,7 +18,7 @@ public class BeatScroller : MonoBehaviour
     void Update()
     {
         if (!hasStarted) {
-            if (Input.anyKeyDown) {
+            if (Input.GetKeyDown("space")) {
                 hasStarted = true;
             }
         } else {

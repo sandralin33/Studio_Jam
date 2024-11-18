@@ -14,12 +14,16 @@ public class Timer : MonoBehaviour
     // [SerializeField] private Image fill;
     // [SerializeField] private Gradient gradient;
 
-    public bool pause = false;
+    public bool pause = true;
 
     float elapsedTime;
 
     void Update()
     {
+        if (Input.GetKeyDown("space")) {
+                pause = false;
+            }
+
         if (!pause){
             if (remainingTime > 0)
             {
@@ -44,12 +48,4 @@ public class Timer : MonoBehaviour
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
     }
-
-    // void Update()
-    // {
-    //     elapsedTime += Time.deltaTime;
-    //     int minutes = Mathf.FloorToInt(remainingTime / 60);
-    //     int seconds = Mathf.FloorToInt(remainingTime % 60);
-    //     timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    // }
 }
