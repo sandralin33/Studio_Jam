@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     // [SerializeField] private Image fill;
     // [SerializeField] private Gradient gradient;
 
-    public bool pause = true;
+    public bool pause;
 
     float elapsedTime;
 
