@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Mascot : MonoBehaviour
 {
-    
-    public Animator animator;
-
-    // private bool Headbutt = false;
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,12 +17,7 @@ public class Mascot : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            // if (Headbutt)
-            // return;
-            
-            // GetComponent<Animator>().SetTrigger("Headbutt");
-            // Headbutt = true;
-
+            anim.SetTrigger("onhit");
             Debug.Log("space key was pressed");
         }
     }

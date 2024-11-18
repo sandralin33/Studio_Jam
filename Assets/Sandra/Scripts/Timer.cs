@@ -20,10 +20,6 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("space")) {
-                pause = false;
-            }
-
         if (!pause){
             if (remainingTime > 0)
             {
