@@ -4,24 +4,28 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public AudioSource music;
+    public AudioSource music; // music
     public bool startMusic;
-    // public BeatScroller bs;
+    public BeatScroller beat;
     // public Timer timer;
+
+    public static GameManager instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        music.Play();
+        beat.start = true;
     }
 
     // Update is called once per frame
     void Update()
-    {
-        startMusic = true;
-        
-        if(startMusic) {
-            music.Play();
-        }
+    {   
+
     }
 }

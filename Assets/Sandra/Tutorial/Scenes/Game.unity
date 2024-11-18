@@ -1619,6 +1619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 515992357}
   startMusic: 0
+  beat: {fileID: 137593229}
 --- !u!4 &1324389916
 Transform:
   m_ObjectHideFlags: 0
@@ -2280,6 +2281,7 @@ GameObject:
   - component: {fileID: 1858258614}
   - component: {fileID: 1858258613}
   - component: {fileID: 1858258616}
+  - component: {fileID: 1858258617}
   m_Layer: 0
   m_Name: blue axol
   m_TagString: Untagged
@@ -2399,6 +2401,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.05, y: 16.09}
   m_EdgeRadius: 0
+--- !u!114 &1858258617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858258612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a42de64296fe774ab76ad3e874fe37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBePressed: 0
+  keyToPress: 32
 --- !u!1 &1894841108
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class BeatScroller : MonoBehaviour
 {
     public float beatTempo; // bpm 
 
-    public bool start; // starts game when any key pressed
+    public bool start; // start game when any key pressed
     
     // Start is called before the first frame update
     void Start()
@@ -17,14 +17,13 @@ public class BeatScroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (start) {
-            transform.position += new Vector3(beatTempo * Time.deltaTime, 0f, 0f);
+        if (!start) {
             // if (Input.GetKeyDown("space")) {
             //     hasStarted = true;
             // }
         } 
-        // else {
-        //     transform.position += new Vector3(beatTempo * Time.deltaTime, 0f, 0f);
-        // }
+        else {
+            transform.position += new Vector3(beatTempo * Time.deltaTime, 0f, 0f);
+        }
     }
 }
