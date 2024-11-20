@@ -8,8 +8,6 @@ public class GameManager : MonoBehaviour
 {
     public AudioSource music; // music
     public bool startMusic;
-    public BeatScroller beat; // for scroll left
-    public BeatScroller beatDown; // for scroll down
     // public Timer timer;
     public float currentScore;
     public int scorePerNote = 1;
@@ -29,8 +27,6 @@ public class GameManager : MonoBehaviour
     {
         startMusic = true;
         music.Play();
-        beat.start = true;
-        beatDown.start = true;
 
         // scoreText.text = "Enemies Left: 0";
         totalNotes = FindObjectsOfType<NoteObject>().Length;
