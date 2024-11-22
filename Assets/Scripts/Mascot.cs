@@ -29,6 +29,12 @@ public class Mascot : MonoBehaviour
             Debug.Log("left key was pressed");
         }
 
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            anim.SetTrigger("right");
+            Debug.Log("right key was pressed");
+        }
+
         // StopHead();
     }
 
