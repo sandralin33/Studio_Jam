@@ -6,6 +6,8 @@ public class BeatScroller : MonoBehaviour
 {
     public float beatTempo; // bpm 
     public bool scrollDown; 
+    public bool scrollLeft;
+    public bool scrollRight; 
 
     public bool start; // start game when any key pressed
     
@@ -22,9 +24,14 @@ public class BeatScroller : MonoBehaviour
             if(scrollDown) {
                 transform.position -= new Vector3(0f, beatTempo * Time.deltaTime, 0f);
             }
-            else {
+            
+            if(scrollRight) {
                 transform.position += new Vector3(beatTempo * Time.deltaTime, 0f, 0f);
+            }
+            
+            if(scrollLeft) {
+                transform.position -= new Vector3(beatTempo * Time.deltaTime, 0f, 0f);
+            }
         }
     }
-}
 }
