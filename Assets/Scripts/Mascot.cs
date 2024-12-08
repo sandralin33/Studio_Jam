@@ -27,15 +27,15 @@ public class Mascot : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            anim.SetTrigger("onhit");
+            anim.SetTrigger("punch");
             Debug.Log("left key was pressed");
         }
 
-        // StopHead();
-    }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            anim.SetTrigger("right");
+            Debug.Log("right key was pressed");
+        }
 
-    public void StopHead()
-    {
-        anim.SetBool("onhit", false);
     }
 }
