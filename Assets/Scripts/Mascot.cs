@@ -7,10 +7,12 @@ public class Mascot : MonoBehaviour
 {
     public Animator anim;
     // public UnityEvent hit;
+    public static Mascot axo;
 
     // Start is called before the first frame update
     void Start()
     {
+        axo = this;
         anim = gameObject.GetComponent<Animator>();
     }
 
@@ -25,7 +27,7 @@ public class Mascot : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            anim.SetTrigger("fist");
+            anim.SetTrigger("onhit");
             Debug.Log("left key was pressed");
         }
 
