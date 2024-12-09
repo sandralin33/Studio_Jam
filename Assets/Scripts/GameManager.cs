@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     public void NoteMissed() // miss
     {
         Debug.Log("Missed Note");
-        // SceneManager.LoadScene("Lose"); // lose
+        SceneManager.LoadScene("Lose"); // lose
     }
 
     IEnumerator EndGame()

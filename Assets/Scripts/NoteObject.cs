@@ -5,6 +5,7 @@ using UnityEngine;
 public class NoteObject : MonoBehaviour
 {
     public bool canBePressed; 
+    public bool dead; 
     [SerializeField] KeyCode keyToPress; // find what key to press
 
     public GameObject hitEffect;
@@ -27,21 +28,25 @@ public class NoteObject : MonoBehaviour
                 // SFX.Play();
             }
         }
+
+        if(dead) {
+            GameManager.instance.NoteMissed();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) { // checks if within hit box
         if(other.tag == "Activator") {
             canBePressed = true; 
         }
+
+        if(other.tag == "Miss Zone") {
+            dead = true; 
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other) {
         if(other.tag == "Activator") {
             canBePressed = false;
-            
-            GameManager.instance.NoteMissed();
             }
     }
-
-
 }
